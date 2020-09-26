@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/artboard1"
+    tools:context="com.example.gaba.intelligence_homeapp.WelcomeScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/roleTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="textView"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/userDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/adminDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="value"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/servList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="sList"
+                android:text="Go to service list"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bookings"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="bList"
+                android:text="CURRENT BOOKINGS"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Service Provider Profile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:paddingTop="15dp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Company name"
+            android:inputType="textPersonName"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textPersonName"
+            android:visibility="visible" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/yesBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="Licenced"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/noBtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Not Licensed"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnCreateProf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="createProfile"
+                android:text="Create Profile"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnAvail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="availability"
+                android:text="Pick Availiability"
+                android:visibility="visible" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/EmptyProfileAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

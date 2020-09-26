@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/artboard1"
+    tools:context=".SignupScreen">
+
+    <EditText
+        android:id="@+id/addUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="97dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:password="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addUser" />
+
+    <Button
+        android:id="@+id/createAcc"
+        android:layout_width="125dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginRight="129dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="42dp"
+        android:onClick="newUser"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="154dp"
+        android:layout_height="115dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginLeft="115dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addPassword">
+
+        <RadioButton
+            android:id="@+id/rb_HO"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Home Owner" />
+
+        <RadioButton
+            android:id="@+id/rb_SP"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Service Provider" />
+
+        <RadioButton
+            android:id="@+id/rb_AD"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Administrator" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/Empty_Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginStart="62dp"
+        android:text="Please type your password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <TextView
+        android:id="@+id/Empty_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please type your name"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <TextView
+        android:id="@+id/Empty_All"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please type your information"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+</android.support.constraint.ConstraintLayout>
